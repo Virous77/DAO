@@ -1,7 +1,9 @@
+import { Modal } from "./components/UI/Modal";
 import Header from "./components/layout/Header";
 import Content from "./components/main/Content";
 import Contribution from "./components/main/Contribution";
 import Tab from "./components/main/history/Tab";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
       <section className=" mt-10 max-w-full md:max-w-[1000px] m-auto ">
         <Tab />
       </section>
+      <Toaster />
     </main>
   );
 };
